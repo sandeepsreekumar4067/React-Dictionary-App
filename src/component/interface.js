@@ -46,9 +46,9 @@ const Interface = () => {
                 Dictionary App
                </div>
                <div className="input-box">
-                <input type="text" placeholder='Search Words...' value={word} onChange={handleChange}/>
-                <div className="input-icon" onClick={FetchData} >
-                <FaSearch size={20} color='black' />
+                    <input type="text" placeholder='Search Words...' value={word} onChange={handleChange}/>
+                    <div className="input-icon" onClick={FetchData} >
+                    <FaSearch size={20} color='black' />
                 </div>
                </div>
                 <div className={`result${handling?' animate':''}`} >
