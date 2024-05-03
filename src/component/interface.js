@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import '../style/interface.css'
 import WordList from './wordlist';
+import { FaSearch } from "react-icons/fa";
+
 const Interface = () => {
     const [data,setdata] = useState(null)
     const [path,setpath] = useState(null)
@@ -32,13 +34,17 @@ const Interface = () => {
     }
     return ( 
         <div className="interface">
+            
             <div className="box">
-               <div className="title">Dictionary</div>
-               <div className="input-box">
-                <input type="text" value={word} onChange={handleChange} placeholder='Enter the word to search'/>
+               <div className="title">
+                Dictionary App
                </div>
-               <button onClick={FetchData}>Search</button>
-               {path && <WordList path={path} />}
+               <div className="input-box">
+                <input type="text" placeholder='Search Words...' />
+                <div className="input-icon">
+                <FaSearch size={20} color='black' />
+                </div>
+               </div>
             </div>
         </div>
      );
