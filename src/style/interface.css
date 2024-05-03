@@ -21,8 +21,21 @@ body{
 }
 .input-box input{
     width: 850px;
+    padding: 10px;
     margin: 15px;
-    height: 35px;
+    height: 25px;
     border-radius: 15px;
     border: none;
+}
+button{
+    margin: 20px;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #5BBCFF;
+    border: none;
+    transition: 0.2s;
+}
+button:active{
+    scale: 0.8;
 }
