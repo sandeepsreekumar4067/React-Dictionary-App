@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     color: #FFFBDA;
     background: linear-gradient(100deg, #7752FE, #1363DF, #03045E);
 }
@@ -30,31 +30,36 @@ body {
     font-style: normal;
     font-size: 80px;
 }
-.input-box{
+
+.input-box {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
+
 .input-box input {
     width: 300px;
     padding: 20px;
     height: 15px;
-    border-radius:30px ;
+    border-radius: 30px;
     border: none;
     opacity: 0.3;
     outline: none;
     font-size: 18px;
     color: black;
 }
-.input-box button:active{
+
+.input-box button:active {
     border: none;
 }
+
 .input-box input::placeholder {
-    color: #1B1A55; 
-    font-size: 18px; 
+    color: #1B1A55;
+    font-size: 18px;
     opacity: 1;
 }
-.input-icon{
+
+.input-icon {
     height: 45px;
     width: 45px;
     display: flex;
@@ -65,388 +70,474 @@ body {
     opacity: 0.6;
     transition: 0.3s;
 }
-.input-icon:active{
+
+.input-icon:active {
     scale: 0.8;
 }
-.result{
+
+.result {
     padding: 50px;
     font-size: 25px;
-    transition: 1s cubic-bezier(0.7,0.2,0.7);
+    transition: 1s cubic-bezier(0.7, 0.2, 0.7);
 }
-.result.animate{
+
+.result.animate {
     animation: animate-result 0.5s;
 }
-@keyframes animate-result{
-    0%{
+
+@keyframes animate-result {
+    0% {
         opacity: 0;
-        transform:translateY(50%)
+        transform: translateY(50%)
     }
-    50%{
+
+    50% {
         opacity: 1;
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
+
 @media screen and (max-width : 940px) {
-    .box{
+    .box {
         width: 850px;
         height: 500px;
     }
-    .title{
+
+    .title {
         font-size: 60px;
         padding-top: 70px;
     }
-    .input-box input{
+
+    .input-box input {
         width: 280px;
         padding: 16px;
         height: 12px;
-        font-size: 14px ;
-    }
-    .input-box input::placeholder{
         font-size: 14px;
     }
-    .input-icon{
+
+    .input-box input::placeholder {
+        font-size: 14px;
+    }
+
+    .input-icon {
         height: 35px;
         width: 35px;
     }
-    .result{
+
+    .result {
         padding: 45px;
         font-size: 23px;
     }
 }
+
 @media screen and (max-width : 850px) {
-    .box{
+    .box {
         width: 800px;
         height: 450px;
     }
-    .title{
+
+    .title {
         font-size: 50px;
         padding-top: 50px;
     }
-    .input-box input{
+
+    .input-box input {
         width: 260px;
         padding: 14px;
         height: 12px;
-        font-size: 14px ;
-    }
-    .input-box input::placeholder{
         font-size: 14px;
     }
-    .input-icon{
+
+    .input-box input::placeholder {
+        font-size: 14px;
+    }
+
+    .input-icon {
         height: 35px;
         width: 35px;
     }
-    .result{
+
+    .result {
         padding: 45px;
         font-size: 23px;
     }
 }
+
 @media screen and (max-width : 800px) {
-    .box{
+    .box {
         width: 750px;
         height: 400px;
     }
-    .title{
+
+    .title {
         font-size: 48px;
         padding-top: 48px;
     }
-    .input-box input{
+
+    .input-box input {
         width: 250px;
         padding: 13px;
         height: 12px;
-        font-size: 13px ;
-    }
-    .input-box input::placeholder{
         font-size: 13px;
     }
-    .input-icon{
+
+    .input-box input::placeholder {
+        font-size: 13px;
+    }
+
+    .input-icon {
         height: 35px;
         width: 35px;
     }
-    .result{
+
+    .result {
         padding: 40px;
         font-size: 20px;
     }
 }
+
 @media screen and (max-width : 750px) {
-    .box{
+    .box {
         width: 700px;
         height: 400px;
     }
-    .title{
+
+    .title {
         font-size: 45px;
         padding-top: 45px;
     }
-    .input-box input{
+
+    .input-box input {
         width: 220px;
         padding: 13px;
         height: 11px;
-        font-size: 13px ;
-    }
-    .input-box input::placeholder{
         font-size: 13px;
     }
-    .input-icon{
+
+    .input-box input::placeholder {
+        font-size: 13px;
+    }
+
+    .input-icon {
         height: 32px;
         width: 32px;
     }
-    .result{
+
+    .result {
         padding: 40px;
         font-size: 20px;
     }
 }
+
 @media screen and (max-width : 700px) {
-    .box{
+    .box {
         width: 650px;
         height: 450px;
     }
-    .title{
+
+    .title {
         font-size: 45px;
         padding-top: 45px;
     }
-    .input-box{
+
+    .input-box {
         flex-direction: column;
     }
-    .input-box input{
+
+    .input-box input {
         margin-top: 20px;
         width: 240px;
         padding: 13px;
         height: 11px;
-        font-size: 13px ;
-    }
-    .input-box input::placeholder{
         font-size: 13px;
     }
-    .input-icon{
+
+    .input-box input::placeholder {
+        font-size: 13px;
+    }
+
+    .input-icon {
         height: 36px;
         width: 36px;
     }
-    .result{
+
+    .result {
         padding: 40px;
         font-size: 20px;
     }
 }
+
 @media screen and (max-width : 650px) {
-    .box{
+    .box {
         width: 600px;
         height: 500px;
     }
-    .title{
+
+    .title {
         font-size: 45px;
         padding-top: 45px;
     }
-    .input-box{
+
+    .input-box {
         flex-direction: column;
     }
-    .input-box input{
+
+    .input-box input {
         margin-top: 18px;
         width: 250px;
         padding: 13px;
         height: 12px;
-        font-size: 13px ;
-    }
-    .input-box input::placeholder{
         font-size: 13px;
     }
-    .input-icon{
+
+    .input-box input::placeholder {
+        font-size: 13px;
+    }
+
+    .input-icon {
         height: 38px;
         width: 38px;
     }
-    .result{
+
+    .result {
         padding: 40px;
         font-size: 20px;
     }
 }
+
 @media screen and (max-width : 600px) {
-    .box{
+    .box {
         width: 550px;
         height: 500px;
     }
-    .title{
+
+    .title {
         font-size: 40px;
         padding-top: 42px;
     }
-    .input-box{
+
+    .input-box {
         flex-direction: column;
     }
-    .input-box input{
+
+    .input-box input {
         margin-top: 18px;
         width: 250px;
         padding: 13px;
         height: 12px;
-        font-size: 13px ;
-    }
-    .input-box input::placeholder{
         font-size: 13px;
     }
-    .input-icon{
+
+    .input-box input::placeholder {
+        font-size: 13px;
+    }
+
+    .input-icon {
         height: 38px;
         width: 38px;
         margin-top: 15px;
     }
-    .result{
+
+    .result {
         padding: 40px;
         font-size: 20px;
     }
 }
+
 @media screen and (max-width : 550px) {
-    .box{
+    .box {
         width: 500px;
         height: 530px;
     }
-    .title{
+
+    .title {
         font-size: 40px;
         padding-top: 42px;
     }
-    .input-box{
+
+    .input-box {
         flex-direction: column;
     }
-    .input-box input{
+
+    .input-box input {
         margin-top: 28px;
         width: 260px;
         padding: 13px;
         height: 12px;
-        font-size: 13px ;
-    }
-    .input-box input::placeholder{
         font-size: 13px;
     }
-    .input-icon{
+
+    .input-box input::placeholder {
+        font-size: 13px;
+    }
+
+    .input-icon {
         height: 40px;
         width: 40px;
         margin-top: 18px;
     }
-    .result{
+
+    .result {
         padding: 40px;
         font-size: 20px;
     }
 }
+
 @media screen and (max-width : 500px) {
-    .box{
+    .box {
         width: 450px;
         height: 530px;
     }
-    .title{
+
+    .title {
         font-size: 40px;
         padding-top: 42px;
     }
-    .input-box{
+
+    .input-box {
         flex-direction: column;
     }
-    .input-box input{
+
+    .input-box input {
         margin-top: 28px;
         width: 260px;
         padding: 13px;
         height: 12px;
-        font-size: 13px ;
-    }
-    .input-box input::placeholder{
         font-size: 13px;
     }
-    .input-icon{
+
+    .input-box input::placeholder {
+        font-size: 13px;
+    }
+
+    .input-icon {
         height: 40px;
         width: 40px;
         margin-top: 18px;
     }
-    .result{
+
+    .result {
         padding: 40px;
         font-size: 20px;
     }
 }
+
 @media screen and (max-width : 450px) {
-    .box{
+    .box {
         width: 400px;
         height: 550px;
     }
-    .title{
+
+    .title {
         font-size: 40px;
         padding-top: 48px;
     }
-    .input-box{
+
+    .input-box {
         flex-direction: column;
     }
-    .input-box input{
+
+    .input-box input {
         margin-top: 35px;
         width: 260px;
         padding: 13px;
         height: 12px;
-        font-size: 13px ;
-    }
-    .input-box input::placeholder{
         font-size: 13px;
     }
-    .input-icon{
+
+    .input-box input::placeholder {
+        font-size: 13px;
+    }
+
+    .input-icon {
         height: 40px;
         width: 40px;
         margin-top: 20px;
     }
-    .result{
+
+    .result {
         padding: 40px;
         font-size: 19px;
     }
 }
+
 @media screen and (max-width : 400px) {
-    .box{
+    .box {
         width: 350px;
         height: 500px;
     }
-    .title{
+
+    .title {
         font-size: 40px;
         padding-top: 48px;
     }
-    .input-box{
+
+    .input-box {
         flex-direction: column;
     }
-    .input-box input{
+
+    .input-box input {
         margin-top: 35px;
         width: 260px;
         padding: 13px;
         height: 12px;
-        font-size: 13px ;
-    }
-    .input-box input::placeholder{
         font-size: 13px;
     }
-    .input-icon{
+
+    .input-box input::placeholder {
+        font-size: 13px;
+    }
+
+    .input-icon {
         height: 40px;
         width: 40px;
         margin-top: 20px;
     }
-    .result{
+
+    .result {
         padding: 40px;
         font-size: 18px;
     }
 }
+
 @media screen and (max-width : 350px) {
-    .box{
+    .box {
         width: 310px;
         height: 490px;
     }
-    .title{
+
+    .title {
         font-size: 35px;
         padding-top: 48px;
     }
-    .input-box{
+
+    .input-box {
         flex-direction: column;
     }
-    .input-box input{
+
+    .input-box input {
         margin-top: 35px;
         width: 240px;
         padding: 13px;
         height: 12px;
-        font-size: 13px ;
-    }
-    .input-box input::placeholder{
         font-size: 13px;
     }
-    .input-icon{
+
+    .input-box input::placeholder {
+        font-size: 13px;
+    }
+
+    .input-icon {
         height: 40px;
         width: 40px;
         margin-top: 20px;
     }
-    .result{
+
+    .result {
         padding: 40px;
         font-size: 15px;
     }
