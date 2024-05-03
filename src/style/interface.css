@@ -81,3 +81,7 @@ button:active {
 .input-icon:active{
     scale: 0.8;
 }
+.result{
+    padding: 50px;
+    font-size: 25px;
+}

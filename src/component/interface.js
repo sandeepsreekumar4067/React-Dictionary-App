@@ -34,17 +34,19 @@ const Interface = () => {
     }
     return ( 
         <div className="interface">
-            
             <div className="box">
                <div className="title">
                 Dictionary App
                </div>
                <div className="input-box">
-                <input type="text" placeholder='Search Words...' />
-                <div className="input-icon">
+                <input type="text" placeholder='Search Words...' value={word} onChange={handleChange}/>
+                <div className="input-icon" onClick={FetchData} >
                 <FaSearch size={20} color='black' />
                 </div>
                </div>
+                <div className="result">
+                    {path && <WordList path={path}/>}
+                </div>
             </div>
         </div>
      );
